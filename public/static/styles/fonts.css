@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Bosch Sans';
+    src: local('BoschSans Medium'), local('BoschSans-Medium'),
+    url('../fonts/BoschSansMedium/BoschSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BoschSansMedium/BoschSans-Medium.woff') format('woff'),
+    url('../fonts/BoschSansMedium/BoschSans-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bosch Sans';
+    src: local('BoschSans Black'), local('BoschSans-Black'),
+    url('../fonts/BoschSansBlack/BoschSans-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BoschSansBlack/BoschSans-Black.woff') format('woff'),
+    url('../fonts/BoschSansBlack/BoschSans-Black.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bosch Sans';
+    src: local('BoschSans Regular'), local('BoschSans-Regular'),
+    url('../fonts/BoschSansRegular/BoschSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BoschSansRegular/BoschSans-Regular.woff') format('woff'),
+    url('../fonts/BoschSansRegular/BoschSans-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

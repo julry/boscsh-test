@@ -3,9 +3,9 @@ import { ProgressContext } from '../context/ProgressContext';
 import { getAnswerById } from '../utils/getAnswerById';
 import { AnswerType, answerTypes } from '../answerTypes.config';
 
-const DEFAULT_RESULT = AnswerType[0];
+const DEFAULT_RESULT = AnswerType[1];
 
-export const getResult = () => {
+export const useResult = () => {
     const { answers } = useContext(ProgressContext);
 
     const resultPoints = Object.keys(answers).reduce((res, questionId) => {
@@ -14,11 +14,12 @@ export const getResult = () => {
 
         const answer = getAnswerById(questionId, answerId);
         const { type } = answer;
-        return { ...res, [type]: (res[type] || 0) + 1 };
+        return { ...type.reduce((result, t) => ({...result, [t]: (result[t] || 0) + 1 }), {...res}) };
     }, {});
 
     const maxPoints = Math.max(...Object.keys(resultPoints).map(key => resultPoints[key]));
     const resultType = Object.keys(resultPoints).find(key => resultPoints[key] === maxPoints);
+
 
     return answerTypes[resultType || DEFAULT_RESULT];
 };

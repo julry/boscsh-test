@@ -52,6 +52,10 @@ const ComponentWrapper = styled.div`
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    
+    @media (max-height: 750px){
+        width: 50vw;
+    }
   }
 `;
 

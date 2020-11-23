@@ -5,6 +5,10 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   padding: 35px 33px 0;
+  
+  @media screen and (max-width: 360px){
+      padding: 25px 55px 0 20px;
+  }
 `
 
 const Title = styled.p`
@@ -26,7 +30,7 @@ const Result = styled.p`
     letter-spacing: 1px;
     white-space: pre-line;
     
-    @media screen and (max-width: 360px){
+  @media screen and (max-width: 360px){
     font-size: 12px;
   }
   @media screen and (max-height: 600px){
@@ -51,23 +55,23 @@ const Text = styled.p`
 `
 
 const ImageWrapper = styled.div`
-    //overflow-y: hidden;
     height: 270px;
-    margin: 10px 0;
+    margin: 10px 0 10px -33px;
+    overflow: hidden;
     @media screen and (max-height: 600px){
       height: 220px;
-       
     }
-    @media screen and (max-width: 360px){
-         margin: 5px 0;
-         height: 140px;
+    @media screen and (max-width: 350px){
+         margin: 5px 0 5px -25px;
+         height: 160px;
     }
-    
+    @media screen and (max-height: 640px) and (orientation: landscape){
+        height: 0;
+    }
 `
 
 const Image = styled.img`
     max-height: 100%;
-    margin-left: -33px;
 `
 
 const Link = styled.a`

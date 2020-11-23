@@ -16,6 +16,11 @@ const Wrapper = styled.div`
   @media screen and (min-width: 640px) {
     padding-top: 130px;
   }
+  
+  @media screen and (max-height: 640px) and (orientation: landscape){
+    padding-top: 60px;
+  }
+  
 `
 const BackgroundWrapper = styled.div`
     position: absolute;
@@ -25,6 +30,10 @@ const BackgroundWrapper = styled.div`
     right: 0;
     z-index: -1;
     overflow: hidden;
+    @media screen and (max-height: 640px) and (orientation: landscape){
+        background-color: white;
+        opacity: 0.4;
+    }
 `
 const Background = styled.img`
     width: 100%;
@@ -40,6 +49,10 @@ const Title = styled.h1`
    @media screen and (min-width: 640px) {
       font-size: 25px;
    }
+   
+   @media screen and (max-height: 640px) and (orientation: landscape){
+        font-size: 18px;
+   }
 `
 const BoldTitle = styled(Title)`
     margin: 15px 0 30px;
@@ -50,6 +63,7 @@ const BoldTitle = styled(Title)`
     @media screen and (max-width: 360px){
          margin: 10px 0 10px;
     }
+    
 `
 
 const Text = styled.p`
@@ -63,6 +77,10 @@ const Text = styled.p`
     @media screen and (min-width: 640px) {
       font-size: 14px;
     }
+    
+    @media screen and (max-height: 640px) and (orientation: landscape){
+        font-size: 12px;
+   }
 `
 const ButtonStyled = styled.button`
     color: white;
@@ -84,6 +102,9 @@ const LogoWrapper = styled.div`
       }
       @media screen and (max-width: 360px){
         width: 130px;
+      }
+      @media screen and (max-height: 640px) and (orientation: landscape){
+         width: 85px;
       }
 `
 

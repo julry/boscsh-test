@@ -20,6 +20,9 @@ const QuestionLabel = styled.p`
   @media screen and (min-width: 640px) {
       font-size: 11px;
   }
+  @media screen and (max-height: 640px) and (orientation: landscape){
+        font-size: 8px;
+    }
 `
 
 const BackgroundWrapper = styled.div`
@@ -33,6 +36,11 @@ const BackgroundWrapper = styled.div`
     @media screen and (max-height: 600px){
         top: 90px;
     } 
+    
+     @media screen and (max-height: 640px) and (orientation: landscape){
+        background-color: white;
+        opacity: 0.5;
+    }
 `
 const Background = styled.img`
     width: 100%;
@@ -51,9 +59,12 @@ const Question = styled.p`
   @media screen and (min-width: 640px) {
       font-size: 12px;
   }
+  @media screen and (max-height: 640px) and (orientation: landscape){
+        font-size: 10px;
+    }
 `
 
-const Answer = styled.p`
+const Answer = styled.div`
   font-weight: 500;
   font-size: 12px;
   @media screen and (max-height: 700px){
@@ -62,6 +73,9 @@ const Answer = styled.p`
   @media screen and (min-width: 640px) {
       font-size: 11px;
   }
+  @media screen and (max-height: 640px) and (orientation: landscape){
+        font-size: 8px;
+    }
 `
 export const QuestionWrapper = props => {
     const { question, image } = props;

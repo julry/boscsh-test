@@ -1,4 +1,4 @@
-import {boiler, ebike, indego, videocamera} from "./constants/images";
+import {boiler, ebike, indego, temperature, videocamera} from "./constants/images";
 
 export const AnswerType = ['eBIKE', 'tronic', 'indego', 'videocamera', 'temperatureSensor', 'AVP'];
 
@@ -33,6 +33,7 @@ export const answerTypes = {
         type: AnswerType[4],
         title: 'Датчик температуры Bosch',
         description: 'Ты идеально находишь равновесие и правильное решение в любой непростой ситуации. Ты не стремишься занимать явные лидерские позиции, тебе это просто не нужно – в любой непонятной ситуации за советом все равно обратятся именно к тебе. Редко встретишь человека, который способен моментально оценивать ситуацию и видеть вещи такими, какие они есть: с их минусами и преимуществами. Стоит тебе настроиться, и ты моментально схватываешь любые новые вводные.',
+        image: temperature
     },
     [AnswerType[5]]: {
         type: AnswerType[5],

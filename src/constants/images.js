@@ -16,6 +16,7 @@ const ebike = process.env.PUBLIC_URL + '/static/images/ebike.png';
 const boiler = process.env.PUBLIC_URL + '/static/images/boiler.png';
 const indego = process.env.PUBLIC_URL + '/static/images/indego.png';
 const videocamera = process.env.PUBLIC_URL + '/static/images/videocamera.png';
+const temperature = process.env.PUBLIC_URL + '/static/images/temperature.png';
 
 
 const iphone = process.env.PUBLIC_URL + "/static/images/iphone-mockup.png";
@@ -40,5 +41,6 @@ export {
     indego,
     videocamera,
     boiler,
+    temperature,
     iphone
 };

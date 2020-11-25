@@ -3,7 +3,7 @@ import { ProgressContext } from '../context/ProgressContext';
 import { getAnswerById } from '../utils/getAnswerById';
 import { AnswerType, answerTypes } from '../answerTypes.config';
 
-const DEFAULT_RESULT = AnswerType[4];
+const DEFAULT_RESULT = AnswerType[5];
 
 export const useResult = () => {
     const { answers } = useContext(ProgressContext);

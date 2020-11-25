@@ -17,11 +17,20 @@ const boiler = process.env.PUBLIC_URL + '/static/images/boiler.png';
 const indego = process.env.PUBLIC_URL + '/static/images/indego.png';
 const videocamera = process.env.PUBLIC_URL + '/static/images/videocamera.png';
 const temperature = process.env.PUBLIC_URL + '/static/images/temperature.png';
+const avp = process.env.PUBLIC_URL + '/static/images/avp.png';
 
 
 const iphone = process.env.PUBLIC_URL + "/static/images/iphone-mockup.png";
 const logo = process.env.PUBLIC_URL + '/static/images/Logo.png';
 const background = process.env.PUBLIC_URL + '/static/images/questionBackground.png';
+
+const ebike_share = process.env.PUBLIC_URL + '/static/images/ebike_share.jpg';
+const boiler_share = process.env.PUBLIC_URL + '/static/images/boiler_share.jpg';
+const indego_share = process.env.PUBLIC_URL + '/static/images/indego_share.jpg';
+const videocamera_share = process.env.PUBLIC_URL + '/static/images/videocamera_share.jpg';
+const temperature_share = process.env.PUBLIC_URL + '/static/images/temperature_share.jpg';
+const avp_share = process.env.PUBLIC_URL + '/static/images/avp_share.jpg';
+
 
 export {
     intro,
@@ -42,5 +51,12 @@ export {
     videocamera,
     boiler,
     temperature,
+    avp,
+    ebike_share,
+    indego_share,
+    videocamera_share,
+    boiler_share,
+    temperature_share,
+    avp_share,
     iphone
 };

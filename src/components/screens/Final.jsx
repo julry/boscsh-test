@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   white-space: pre-line;
   
   @media screen and (max-width: 360px){
-      padding: 25px 55px 0 20px;
+      padding: 25px 23px 0 20px;
   }
 `
 
@@ -64,7 +64,7 @@ const Text = styled.p`
   
   @media screen and (max-width: 360px){
     font-size: 9px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   
 `
@@ -121,7 +121,8 @@ const ShareBox = styled.a`
     text-decoration: none;
     @media screen and (max-width: 360px){
         font-size: 10px;
-      }
+        margin-bottom: 6px;
+    }
 `
 const ShareVKIcon = styled(VkIcon)`
     width: 42px;
@@ -129,6 +130,10 @@ const ShareVKIcon = styled(VkIcon)`
     @media screen and (max-height: 600px){
          width: 30px;
     } 
+    
+    @media screen and (max-width: 360px){
+        width: 20px;
+      }
 `
 
 
@@ -156,11 +161,8 @@ const Final = () => {
     queryParams.append('description', shareText);
     queryParams.append("comment", shareText);
 
-    const link = `http://vk.com/share.php?${queryParams.toString()}`;
-
-    // const onShare = () => {
-    //     console.log(queryParams.toString());
-    // };
+    const isMobile = window.screen.availWidth < 640;
+    const link =  isMobile ?`vk://vk.com/share.php?${queryParams.toString()}` : `http://vk.com/share.php?${queryParams.toString()}`;
 
     return (
         <Wrapper>

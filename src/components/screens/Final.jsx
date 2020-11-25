@@ -18,14 +18,14 @@ const Wrapper = styled.div`
 const Title = styled.p`
   font-size: 14px;
   text-transform: uppercase;
-  @media screen and (max-width: 360px){
-    font-size: 10px;
-  }
   
   @media screen and (max-height: 600px){
     font-size: 12px;
   }
   
+  @media screen and (max-width: 360px){
+    font-size: 10px;
+  }
  
   
 `
@@ -37,9 +37,7 @@ const Result = styled.p`
     letter-spacing: 1px;
     white-space: pre-line;
     
-  @media screen and (max-width: 360px){
-    font-size: 12px;
-  }
+  
   
   @media screen and (max-height: 600px){
          font-size: 16px;
@@ -49,19 +47,24 @@ const Result = styled.p`
        font-size: 16px;
   } 
   
+  @media screen and (max-width: 360px){
+    font-size: 12px;
+  }
+  
 `
 
 const Text = styled.p`
    font-size: 12px;
    white-space: pre-line;
    margin-bottom: 15px;
+  
+  @media screen and (max-height: 600px){
+         font-size: 10px;
+  }
+  
   @media screen and (max-width: 360px){
     font-size: 9px;
     margin-bottom: 10px;
-
-  }
-  @media screen and (max-height: 600px){
-         font-size: 10px;
   }
   
 `
@@ -98,11 +101,12 @@ const Link = styled.a`
     display: inline-block;
     line-height: 100%;
     
-      @media screen and (max-width: 360px){
-        font-size: 9px;
-      }
       @media screen and (max-height: 600px){
         font-size: 10px;
+      }
+      
+      @media screen and (max-width: 360px){
+        font-size: 9px;
       }
 `
 
@@ -115,6 +119,9 @@ const ShareBox = styled.a`
     color: black;
     flex-shrink: 0;
     text-decoration: none;
+    @media screen and (max-width: 360px){
+        font-size: 10px;
+      }
 `
 const ShareVKIcon = styled(VkIcon)`
     width: 42px;

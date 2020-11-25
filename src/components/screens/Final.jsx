@@ -113,6 +113,7 @@ const ShareBox = styled.a`
     margin-bottom: 15px;
     cursor: pointer;
     color: black;
+    flex-shrink: 0;
     text-decoration: none;
 `
 const ShareVKIcon = styled(VkIcon)`

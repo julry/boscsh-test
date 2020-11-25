@@ -23,8 +23,11 @@ const Title = styled.p`
   }
   
   @media screen and (max-height: 600px){
-         font-size: 12px;
+    font-size: 12px;
   }
+  
+ 
+  
 `
 
 const Result = styled.p`
@@ -37,9 +40,14 @@ const Result = styled.p`
   @media screen and (max-width: 360px){
     font-size: 12px;
   }
+  
   @media screen and (max-height: 600px){
          font-size: 16px;
   }
+  
+   @media screen and (min-width: 640px) and (max-height: 750px){
+       font-size: 16px;
+  } 
   
 `
 
@@ -72,6 +80,11 @@ const ImageWrapper = styled.div`
     @media screen and (max-height: 640px) and (orientation: landscape){
         height: 0;
     }
+    
+    @media screen and (min-width: 640px) and (max-height: 750px){
+       height: 190px;
+    } 
+  
 `
 
 const Image = styled.img`

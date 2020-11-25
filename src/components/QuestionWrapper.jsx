@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const QuestionWrapperStyled = styled.div`
     padding: 26px 33px 0 23px;
     @media screen and (min-width: 640px) {
-      padding: 33px 38px;
+      padding: 43px 38px 0;
     }
 `;
 
@@ -36,8 +36,9 @@ const BackgroundWrapper = styled.div`
     @media screen and (max-height: 600px){
         top: 90px;
     } 
+   
     
-     @media screen and (max-height: 640px) and (orientation: landscape){
+    @media screen and (max-height: 640px) and (orientation: landscape){
         background-color: white;
         opacity: 0.5;
     }
@@ -58,6 +59,9 @@ const Question = styled.p`
   }
   @media screen and (min-width: 640px) {
       font-size: 12px;
+      @media screen and (max-height: 750px){
+        font-size:11px;
+      }
   }
   @media screen and (max-height: 640px) and (orientation: landscape){
         font-size: 10px;
@@ -72,6 +76,9 @@ const Answer = styled.div`
   }
   @media screen and (min-width: 640px) {
       font-size: 11px;
+      @media screen and (max-height: 750px){
+          font-size:10px;
+      }
   }
   @media screen and (max-height: 640px) and (orientation: landscape){
         font-size: 8px;

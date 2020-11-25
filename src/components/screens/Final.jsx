@@ -106,12 +106,14 @@ const Link = styled.a`
       }
 `
 
-const ShareBox = styled.div`
+const ShareBox = styled.a`
     font-size: 12px;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 `
 const ShareVKIcon = styled(VkIcon)`
     width: 42px;
@@ -148,9 +150,9 @@ const Final = () => {
 
     const link = `http://vk.com/share.php?${queryParams.toString()}`;
 
-    const onShare = () => {
-        window.open(link, "mywindow");
-    };
+    // const onShare = () => {
+    //     console.log(queryParams.toString());
+    // };
 
     return (
         <Wrapper>
@@ -160,7 +162,7 @@ const Final = () => {
                 <Image src={result.image} alt={''}/>
             </ImageWrapper>
             <Text>{result.description}</Text>
-            <ShareBox onClick={onShare}>
+            <ShareBox target={'_blank'} href={link}>
                 <p>Поделиться</p>
                 <ShareVKIcon />
             </ShareBox>

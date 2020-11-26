@@ -161,8 +161,7 @@ const Final = () => {
     queryParams.append('description', shareText);
     queryParams.append("comment", shareText);
 
-    const isMobile = window.screen.availWidth < 640;
-    const link =  isMobile ?`vk://vk.com/share.php?${queryParams.toString()}` : `http://vk.com/share.php?${queryParams.toString()}`;
+    const link = `http://vk.com/share.php?${queryParams.toString()}`;
 
     return (
         <Wrapper>

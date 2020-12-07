@@ -67,6 +67,9 @@ const BoldTitle = styled(Title)`
 `
 
 const Text = styled.p`
+    & + & {
+      margin-top: 5px;
+    }
     @media screen and (max-height: 700px){
          font-size: 12px;
     }
@@ -87,9 +90,9 @@ const ButtonStyled = styled.button`
     padding: 10px 20px;
     background-color: #005691;
     border: none;
-    margin-top: 25px;
+    margin-top: 20px;
     @media screen and (max-width: 360px){
-         margin-top: 15px;
+         margin-top: 10px;
     }
 `
 const LogoWrapper = styled.div`
@@ -126,6 +129,7 @@ const Intro = () => {
             <Title>{'Тест: \n'} </Title>
             <BoldTitle> {'Кто ты \n из техники \n Bosch?'} </BoldTitle>
             <Text>{'10 ситуаций, в которых может \n оказаться любой стажер.\n Ответь на вопросы и узнай, \n кто ты из техники Bosch!'}</Text>
+            <Text>Сделай репост с результатом и выиграй мерч от Bosch! </Text>
             <ButtonStyled onClick={setNext}> Начать </ButtonStyled>
         </Wrapper>
     )

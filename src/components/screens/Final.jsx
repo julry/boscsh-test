@@ -113,6 +113,7 @@ const Link = styled.a`
 const ShareBox = styled.a`
     font-size: 12px;
     display: flex;
+    font-weight: 600;
     align-items: center;
     margin-bottom: 15px;
     cursor: pointer;
@@ -172,7 +173,7 @@ const Final = () => {
             </ImageWrapper>
             <Text>{result.description}</Text>
             <ShareBox target={'_blank'} href={link}>
-                <p>Поделиться</p>
+                <p>{"Поделиться и выиграть\nмерч от Bosch"}</p>
                 <ShareVKIcon />
             </ShareBox>
             <Link href={'https://www.bosch.ru/'} target={'_blank'}> {'Узнать больше о компании \nи карьерных возможностях'} </Link>

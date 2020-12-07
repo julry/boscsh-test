@@ -60,11 +60,7 @@ const ComponentWrapper = styled.div`
 `;
 
 export function ScreenWrapper() {
-    //
-    const urlParams = new URLSearchParams(window.location.search);
-    const screenParam = urlParams.get('screen');
-    //
-    const [currentScreenIndex, setCurrentScreenIndex] = useState(+screenParam || 0);
+    const [currentScreenIndex, setCurrentScreenIndex] = useState( 0);
     const [answers, setAnswers] = useState([]);
 
     const setNext = () => {
